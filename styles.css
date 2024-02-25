@@ -1,16 +1,19 @@
-.square {
-    width: 128px;
-    height: 128px;
-    margin: 0;
-    padding: 0;
-    background-color: aqua;
 
-}
 
 .container {
+    width: 800px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    padding: 0;
-    margin: 0;
+    align-content: center;
+    justify-content: center;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
