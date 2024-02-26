@@ -40,10 +40,11 @@ function drawSquares(sideLength) {
 const btn = document.querySelector("button");
 const body = document.querySelector("body");
 btn.addEventListener("click", () => {
-  let dimensions = parseFloat(prompt("How many squares on each side?"));
-  if (dimensions > 100) {
-    alert("Input must be a number less than 100");
-  } else if (typeof(dimensions) != "number") {
+  let dimensions = prompt("How many squares on each side?");
+  let dimensionsNumber = Number(dimensions);
+  if (dimensionsNumber > 100) {
+    alert("Input must be a number less than 100 (100x100 max)");
+  } else if (Number.isNaN(dimensionsNumber)) {
     alert("Input must be a number");
   } else {
     drawSquares(dimensions);
