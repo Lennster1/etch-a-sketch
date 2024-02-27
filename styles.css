@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  border-radius: 4px;
+  border-style: solid;
 }
 
 body {
